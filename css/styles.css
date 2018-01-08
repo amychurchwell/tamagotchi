@@ -1,0 +1,40 @@
+.sonic {
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.neutral {
+  background-image: url('./../img/sonic-neutral.gif');
+}
+
+.dead {
+  background-image: url('./../img/sonic-dead.gif');
+}
+
+.happy {
+  background-image: url('./../img/sonic-happy.gif');
+}
+
+.mad {
+  background-image: url('./../img/sonic-mad.gif');
+}
+
+.run {
+  background-image: url('./../img/sonic-run.gif');
+}
+
+.eating {
+  background-image: url('./../img/sonic-eating.gif');
+}
+
+.scream {
+  background-image: url('./../img/sonic-scream.gif');
+}
+
+.upset {
+  background-image: url('./../img/sonic-upset.gif');
+}

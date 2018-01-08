@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="build/css/main.css"> -->
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Tamagotchi</title>
   </head>
   <body>
-    <h1></h1>
+    <div class="container">
+      <h1>Tamagotchi</h1>
+      <div class="tami-display">
+        <div class="sonic neutral"></div>
+      </div>
+        <form id="tami-form">
+          <button class="btn btn-info btn-lg" type="button" id="button-feed" name="button">Feed</button>
+          <button class="btn btn-info btn-lg" type="button" id="button-sleep" name="button">Sleep</button>
+      </form>
+    </div>
   </body>
 </html>

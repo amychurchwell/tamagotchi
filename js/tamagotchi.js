@@ -1,5 +1,5 @@
 export class Tamagotchi {
-  constructor(name) {
+  constructor(name, foodLevel, sleepLevel) {
     this.name = name;
     this.foodLevel = 10;
     this.sleepLevel = 10;
