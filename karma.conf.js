@@ -1,6 +1,3 @@
-// Karma configuration
-// Generated on Wed Jan 03 2018 10:43:08 GMT-0800 (PST)
-
 module.exports = function(config) {
   config.set({
     basePath: '',
@@ -8,12 +5,13 @@ module.exports = function(config) {
     files: [
       'js/*.js',
       'spec/*-spec.js',
+      'node_modules/moment/min/moment.min.js'
     ],
     exclude: [
     ],
     preprocessors: {
       'js/*.js': [ 'browserify'],
-      'spec/*.js': ['browserify'],
+      'spec/*.js': ['browserify']
     },
     plugins: [
       'karma-jquery',
@@ -22,6 +20,10 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-jasmine-html-reporter'
     ],
+    browserify: {
+      debug: true,
+      transform: [ [ 'babelify', {presets: ["es2015"]} ] ]
+    },
 
     reporters: ['progress', 'kjhtml'],
     port: 9876,

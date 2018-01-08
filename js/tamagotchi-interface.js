@@ -1,4 +1,4 @@
-import { test } from './../js/scripts.js';
+import { Tamagotchi } from './../js/scripts.js';
 
 $(document).ready(function(){
   alert('document ready');
