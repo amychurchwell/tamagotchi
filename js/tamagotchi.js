@@ -1,15 +1,22 @@
 export class Tamagotchi {
 
-  constructor(name, foodLevel, sleepLevel) {
+  constructor(name, foodLevel, patienceLevel) {
     this.name = name;
     this.foodLevel = 10;
-    this.sleepLevel = 10;
+    this.patienceLevel = 10;
   }
 
   setHunger() {
     setInterval(() => {
-      this.foodLevel--;
-    }, 1000);
+      if (this.foodLevel > 0) {
+        this.foodLevel--;
+        console.log(this.foodLevel);
+        return false;
+      } else {
+        return true;
+      }
+    }, 5000);
+
   }
 
   didYouGetEaten() {
@@ -24,21 +31,27 @@ export class Tamagotchi {
    this.foodLevel = 10;
  }
 
- setSleep() {
+ setPatience() {
    setInterval(() => {
-     this.sleepLevel--;
-   }, 1000);
+     if (this.patienceLevel > 0) {
+       this.patienceLevel--;
+       console.log(this.patienceLevel);
+       return false;
+     } else {
+       return true;
+     }
+   }, 5000);
  }
 
  didYouGetSlapped() {
-   if (this.sleepLevel > 0) {
+   if (this.patienceLevel > 0) {
      return false;
    } else {
      return true;
    }
  }
 
- sleep() {
-   this.sleepLevel = 10;
+ run() {
+   this.patienceLevel = 10;
  }
 }
